@@ -1,0 +1,53 @@
+ncelab: 08.20-s015: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+TOOL:	ncelab	08.20-s015: Started on Jan 28, 2015 at 00:16:03 EST
+ncelab
+    +access+rwc
+    -messages
+    worklib.testbench
+
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.add_const:module <0x43eb7ce6>
+			streams:   1, words:   125
+		worklib.adder:module <0x2eb2b050>
+			streams:   1, words:   366
+		worklib.clock:module <0x6ce21b37>
+			streams:   2, words:   699
+		worklib.exception_unit:module <0x4ecc7789>
+			streams:   6, words:  5958
+		worklib.mips_core:module <0x151e32e3>
+			streams:  35, words:  8542
+		worklib.mips_decode:module <0x189d8126>
+			streams:   1, words:  1485
+		worklib.mips_mem:module <0x4425a300>
+			streams:  92, words: 43999
+		worklib.register:module <0x08c894ef>
+			streams:   3, words:   734
+		worklib.register:module <0x11ad4c35>
+			streams:   3, words:   716
+		worklib.register:module <0x3e356bf7>
+			streams:   3, words:   716
+		worklib.register:module <0x3e82b362>
+			streams:   3, words:   714
+		worklib.syscall_unit:module <0x7fd85f55>
+			streams:   2, words:   743
+		worklib.testbench:module <0x14077fa9>
+			streams:   8, words:  1861
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             16      11
+		Registers:           27      22
+		Scalar wires:        31       -
+		Expanded wires:       4       1
+		Vectored wires:      38       -
+		Named events:         2       2
+		Always blocks:       18      13
+		Initial blocks:       4       4
+		Cont. assignments:   31      31
+		Pseudo assignments:  16      16
+	Writing initial simulation snapshot: worklib.testbench:module
+TOOL:	ncelab	08.20-s015: Exiting on Jan 28, 2015 at 00:16:03 EST  (total: 00:00:00)

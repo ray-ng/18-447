@@ -1,0 +1,51 @@
+ncvlog: 08.20-s015: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+TOOL:	ncvlog	08.20-s015: Started on Jan 28, 2015 at 00:16:03 EST
+ncvlog
+    -sv
+    -linedebug
+    -messages
+    -incdir src
+    src/exception_unit.v
+    src/mips_mem.v
+    src/multiply_coprocessor.v
+    src/regfile.v
+    src/syscall_unit.v
+    src/testbench.v
+    src/mips_core.sv
+    src/mips_decode.sv
+
+file: src/exception_unit.v
+	module worklib.exception_unit
+		errors: 0, warnings: 0
+file: src/mips_mem.v
+	module worklib.mips_mem
+		errors: 0, warnings: 0
+file: src/multiply_coprocessor.v
+	module worklib.multiply_coprocessor
+		errors: 0, warnings: 0
+file: src/regfile.v
+	module worklib.regfile
+		errors: 0, warnings: 0
+file: src/syscall_unit.v
+	module worklib.syscall_unit
+		errors: 0, warnings: 0
+file: src/testbench.v
+	module worklib.testbench
+		errors: 0, warnings: 0
+	module worklib.clock
+		errors: 0, warnings: 0
+file: src/mips_core.sv
+	module worklib.mips_core
+		errors: 0, warnings: 0
+	module worklib.mips_ALU
+		errors: 0, warnings: 0
+	module worklib.register
+		errors: 0, warnings: 0
+	module worklib.adder
+		errors: 0, warnings: 0
+	module worklib.add_const
+		errors: 0, warnings: 0
+file: src/mips_decode.sv
+	module worklib.mips_decode
+		errors: 0, warnings: 0
+TOOL:	ncvlog	08.20-s015: Exiting on Jan 28, 2015 at 00:16:03 EST  (total: 00:00:00)

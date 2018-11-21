@@ -1,0 +1,183 @@
+ncvlog: 08.20-s015: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+TOOL:	ncvlog	08.20-s015: Started on Jan 28, 2015 at 00:15:11 EST
+ncvlog
+    -sv
+    -linedebug
+    -messages
+    -incdir src
+    src/exception_unit.v
+    src/mips_mem.v
+    src/multiply_coprocessor.v
+    src/regfile.v
+    src/syscall_unit.v
+    src/testbench.v
+    src/*.sv
+
+file: src/exception_unit.v
+`include "mips_defines.vh"
+                         |
+ncvlog: *E,COFILX (src/exception_unit.v,38|25): cannot open include file 'mips_defines.vh'.
+		AdEL_inst: cause = `EX_ADEL;
+		                          |
+ncvlog: *E,NOTDIR (src/exception_unit.v,67|28): `EX_ADEL: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		AdEL_inst: cause = `EX_ADEL;
+		                           |
+ncvlog: *E,ILLPRI (src/exception_unit.v,67|29): illegal expression primary [4.2(IEEE)].
+		AdEL_data: cause = `EX_ADEL;
+		                          |
+ncvlog: *E,NOTDIR (src/exception_unit.v,68|28): `EX_ADEL: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		AdEL_data: cause = `EX_ADEL;
+		                           |
+ncvlog: *E,ILLPRI (src/exception_unit.v,68|29): illegal expression primary [4.2(IEEE)].
+		AdES:      cause = `EX_ADES;
+		                          |
+ncvlog: *E,NOTDIR (src/exception_unit.v,69|28): `EX_ADES: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		AdES:      cause = `EX_ADES;
+		                           |
+ncvlog: *E,ILLPRI (src/exception_unit.v,69|29): illegal expression primary [4.2(IEEE)].
+		IBE:       cause = `EX_IBE;
+		                         |
+ncvlog: *E,NOTDIR (src/exception_unit.v,70|27): `EX_IBE: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		IBE:       cause = `EX_IBE;
+		                          |
+ncvlog: *E,ILLPRI (src/exception_unit.v,70|28): illegal expression primary [4.2(IEEE)].
+		DBE:       cause = `EX_DBE;
+		                         |
+ncvlog: *E,NOTDIR (src/exception_unit.v,71|27): `EX_DBE: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		DBE:       cause = `EX_DBE;
+		                          |
+ncvlog: *E,ILLPRI (src/exception_unit.v,71|28): illegal expression primary [4.2(IEEE)].
+		CpU:       cause = `EX_CPU;
+		                         |
+ncvlog: *E,NOTDIR (src/exception_unit.v,72|27): `EX_CPU: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		CpU:       cause = `EX_CPU;
+		                          |
+ncvlog: *E,ILLPRI (src/exception_unit.v,72|28): illegal expression primary [4.2(IEEE)].
+		RI:        cause = `EX_RI;
+		                        |
+ncvlog: *E,NOTDIR (src/exception_unit.v,73|26): `EX_RI: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		RI:        cause = `EX_RI;
+		                         |
+ncvlog: *E,ILLPRI (src/exception_unit.v,73|27): illegal expression primary [4.2(IEEE)].
+		Ov:        cause = `EX_OV;
+		                        |
+ncvlog: *E,NOTDIR (src/exception_unit.v,74|26): `EX_OV: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		Ov:        cause = `EX_OV;
+		                         |
+ncvlog: *E,ILLPRI (src/exception_unit.v,74|27): illegal expression primary [4.2(IEEE)].
+		BP:        cause = `EX_BP;
+		                        |
+ncvlog: *E,NOTDIR (src/exception_unit.v,75|26): `EX_BP: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		BP:        cause = `EX_BP;
+		                         |
+ncvlog: *E,ILLPRI (src/exception_unit.v,75|27): illegal expression primary [4.2(IEEE)].
+				$display(`MSG_ADEL_S, pc);
+				                   |
+ncvlog: *E,NOTDIR (src/exception_unit.v,87|23): `MSG_ADEL_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_ADEL_S, pc);
+				                   |
+ncvlog: *E,NOTDIR (src/exception_unit.v,89|23): `MSG_ADEL_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_ADES_S, pc);
+				                   |
+ncvlog: *E,NOTDIR (src/exception_unit.v,91|23): `MSG_ADES_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_IBE_S, pc);
+				                  |
+ncvlog: *E,NOTDIR (src/exception_unit.v,93|22): `MSG_IBE_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_DBE_S, pc);
+				                  |
+ncvlog: *E,NOTDIR (src/exception_unit.v,95|22): `MSG_DBE_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_CPU_S, pc);
+				                  |
+ncvlog: *E,NOTDIR (src/exception_unit.v,97|22): `MSG_CPU_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_RI_S, pc);
+				                 |
+ncvlog: *E,NOTDIR (src/exception_unit.v,99|21): `MSG_RI_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_OV_S, pc);
+				                 |
+ncvlog: *E,NOTDIR (src/exception_unit.v,101|21): `MSG_OV_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+				$display(`MSG_BP_S, pc);
+				                 |
+ncvlog: *E,NOTDIR (src/exception_unit.v,103|21): `MSG_BP_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+	module worklib.exception_unit
+		errors: 27, warnings: 0
+file: src/mips_mem.v
+	module worklib.mips_mem
+		errors: 0, warnings: 0
+file: src/multiply_coprocessor.v
+			{1'b1,`MUL_MTHI}: hi <= rs_data;
+			              |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,29|17): `MUL_MTHI: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			{1'b1,`MUL_MTHI}: hi <= rs_data;
+			               |
+ncvlog: *E,ILLPRI (src/multiply_coprocessor.v,29|18): illegal expression primary [4.2(IEEE)].
+			{1'b1,`MUL_MTHI}: hi <= rs_data;
+			                               |
+ncvlog: *E,EXPRCC (src/multiply_coprocessor.v,29|34): expecting a right brace ('}') [4.1.14(IEEE)].
+			{1'b1,`MUL_MTLO}: lo <= rs_data;
+			|
+ncvlog: *E,EXPENM (src/multiply_coprocessor.v,30|3): expecting the keyword 'endmodule' [12.1(IEEE)].
+			{1'b1,`MUL_MTLO}: lo <= rs_data;
+			              |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,30|17): `MUL_MTLO: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			{1'b1,`MUL_MULT}: {hi, lo} <= {{32{rs_data[31]}},rs_data} * {{32{rt_data[31]}},rt_data};
+			              |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,31|17): `MUL_MULT: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			{1'b1,`MUL_MULTU}: {hi, lo} <= {32'h0,rs_data} * {32'h0,rt_data};
+			               |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,32|18): `MUL_MULTU: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			{1'b1,`MUL_DIV},{1'b1,`MUL_DIVU}: begin
+			             |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,33|16): `MUL_DIV: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			{1'b1,`MUL_DIV},{1'b1,`MUL_DIVU}: begin
+			                              |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,33|33): `MUL_DIVU: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		`MUL_MFHI: mul__rd_data = hi;
+		        |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,47|10): `MUL_MFHI: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+		`MUL_MFLO: mul__rd_data = lo;
+		        |
+ncvlog: *E,NOTDIR (src/multiply_coprocessor.v,48|10): `MUL_MFLO: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+	module worklib.multiply_coprocessor
+		errors: 11, warnings: 0
+file: src/regfile.v
+	module worklib.regfile
+		errors: 0, warnings: 0
+file: src/syscall_unit.v
+`include "mips_defines.vh"
+                         |
+ncvlog: *E,COFILX (src/syscall_unit.v,38|25): cannot open include file 'mips_defines.vh'.
+	assign 	syscall_halt = rst_b && Sys && (r_v0 == `SYS_EXIT);
+	       	                                                |
+ncvlog: *E,NOTDIR (src/syscall_unit.v,50|57): `SYS_EXIT: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+	assign 	syscall_halt = rst_b && Sys && (r_v0 == `SYS_EXIT);
+	       	                                                 |
+ncvlog: *E,ILLPRI (src/syscall_unit.v,50|58): illegal expression primary [4.2(IEEE)].
+	assign 	syscall_halt = rst_b && Sys && (r_v0 == `SYS_EXIT);
+	       	                                                 |
+ncvlog: *E,EXPSMC (src/syscall_unit.v,50|58): expecting a semicolon (';') [6.1(IEEE)].
+			`SYS_EXIT: begin
+			        |
+ncvlog: *E,NOTDIR (src/syscall_unit.v,56|11): `SYS_EXIT: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			`SYS_EXIT: begin
+			         |
+ncvlog: *E,ILLPRI (src/syscall_unit.v,56|12): illegal expression primary [4.2(IEEE)].
+			`SYS_EXIT: begin
+			               |
+ncvlog: *E,ILLPRI (src/syscall_unit.v,56|18): illegal expression primary [4.2(IEEE)].
+				$display(`MSG_EOP_S, pc);
+				                  |
+ncvlog: *E,NOTDIR (src/syscall_unit.v,57|22): `MSG_EOP_S: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			endcase
+			      |
+ncvlog: *E,EXPENM (src/syscall_unit.v,59|9): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.syscall_unit
+		errors: 8, warnings: 0
+file: src/testbench.v
+	module worklib.testbench
+		errors: 0, warnings: 0
+	module worklib.clock
+		errors: 0, warnings: 0
+ncvlog: *E,COFILE: cannot open source file 'src/*.sv'.
+	Total errors/warnings found outside modules and primitives:
+		errors: 1, warnings: 0
+TOOL:	ncvlog	08.20-s015: Exiting on Jan 28, 2015 at 00:15:11 EST  (total: 00:00:00)

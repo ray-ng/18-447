@@ -1,0 +1,18 @@
+ncsim: 08.20-s015: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+ncsim> database -open -shm -default waveforms
+Created default SHM database waveforms
+ncsim> probe -shm -create -depth all -all 
+Created probe 1
+ncsim> run 
+
+
+
+
+>>>>> This works much better after you have hooked up the reg file. <<<<<
+
+
+
+
+Simulation complete via $finish(1) at time 0 FS + 0
+./src/mips_core.sv:183      $finish;
+ncsim> exit 
